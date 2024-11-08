@@ -19,21 +19,22 @@ export default function RotatingCircle({ theme }: RotatingCircleProps) {
   const getColor2 = (t: number): string => {
     switch (t) {
       case 0:
-        return '#FF00FF';
+        return '#FF00FF'; // Bright pink 
       case 1:
-        return '#1652F0';
+        return '#1652F0'; // Dark blue 
       case 2:
-        return '#00FF00';
+        return '#00FF00'; // Green 
       case 3:
-        return '#ED7255';
+        return '#ED7255'; // Orange-red 
       case 4:
-        return '#231815';
+        return '#231815'; // Dark brown 
       case 5:
-        return '#00D395';
+        return '#00D395'; // Turquoise 
       default:
-        return '#1652F0';
+        return '#1652F0'; // Dark blue
     }
   };
+
 
   const updateRotation = (clientX: number, clientY: number) => {
     if (!elRef.current) return;
